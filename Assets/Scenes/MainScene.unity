@@ -283,8 +283,7 @@ MonoBehaviour:
   - {fileID: 4080867063082583967, guid: 7c574bb551ae7a14aae772aa170c7ecf, type: 3}
   firstMapPiece: {fileID: 7121159612498386302, guid: 8ae961f90293e9047867eee14adde1ed, type: 3}
   spawnPoint: {fileID: 890166615}
-  spawnDistance: 10
-  moveSpeed: 5
+  fixedSpawnDistance: 7.5
 --- !u!4 &936913674
 Transform:
   m_ObjectHideFlags: 0
@@ -301,9 +300,41 @@ Transform:
   - {fileID: 890166615}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1806984031
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1806984032}
+  m_Layer: 0
+  m_Name: Player
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1806984032
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1806984031}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 24.066656, y: -10.8752365, z: -0.30382484}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
   m_Roots:
   - {fileID: 519420032}
   - {fileID: 936913674}
+  - {fileID: 1806984032}
