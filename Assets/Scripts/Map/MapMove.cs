@@ -4,35 +4,40 @@ using UnityEngine;
 
 public class MapMove : MonoBehaviour
 {
-    public GameObject[] mapPieces;
-    public GameObject firstMapPiece;
-    public Transform spawnPoint;
+    public GameObject[] mapPieces;       // 랜덤으로 생성될 맵 조각 배열
+    public GameObject firstMapPiece;     // 첫 번째로 생성할 맵 조각
+    public Transform spawnPoint;         // 맵 조각이 생성될 위치
+    public float fixedSpawnDistance = 10f; // 플랫폼 사이의 고정된 간격
 
-    // 고정된 간격
-    public float fixedSpawnDistance = 10f; // 원하는 간격 설정
+    private GameObject lastMapPiece;     // 마지막으로 생성된 맵 조각을 저장할 변수
+    private int lastIndex = -1;          // 마지막으로 생성된 조각의 인덱스
 
     void Start()
     {
         // 첫 번째 맵 조각 생성
-        Instantiate(firstMapPiece, spawnPoint.position, Quaternion.identity);
+        lastMapPiece = Instantiate(firstMapPiece, spawnPoint.position, Quaternion.identity);
+        spawnPoint.position += new Vector3(fixedSpawnDistance, 0, 0); // 다음 플랫폼 위치로 이동
 
-        // spawnPoint를 초기 간격만큼 이동
-        spawnPoint.position += new Vector3(fixedSpawnDistance, 0, 0);
-
-        // 일정 시간마다 프리팹 생성
-        InvokeRepeating("SpawnMapPiece", 0f, 2f);
+        // 이후 랜덤 맵 조각들 생성 시작
+        InvokeRepeating("SpawnMapPiece", 2f, 2f);
     }
 
     void SpawnMapPiece()
     {
-        // 랜덤으로 프리팹 선택
-        int randomIndex = Random.Range(0, mapPieces.Length);
+        int randomIndex;
+
+        do
+        {
+            randomIndex = Random.Range(0, mapPieces.Length);
+        } while (randomIndex == lastIndex); // 이전 인덱스와 같으면 다시 선택
+
         GameObject selectedPiece = mapPieces[randomIndex];
 
-        // 프리팹 생성
-        Instantiate(selectedPiece, spawnPoint.position, Quaternion.identity);
+        // 새 맵 조각 생성
+        lastMapPiece = Instantiate(selectedPiece, spawnPoint.position, Quaternion.identity);
+        lastIndex = randomIndex; // 마지막 생성된 조각의 인덱스 업데이트
 
-        // spawnPoint를 고정된 간격만큼 이동
+        // spawnPoint 업데이트
         spawnPoint.position += new Vector3(fixedSpawnDistance, 0, 0);
     }
 }

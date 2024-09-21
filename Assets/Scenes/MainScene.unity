@@ -277,13 +277,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   mapPieces:
   - {fileID: 3275639161212738573, guid: 3312d9d0fadae9643801596e6f31f09d, type: 3}
-  - {fileID: 4036932175707566721, guid: a2964125bf7f4f94d9a13c3f3e620cea, type: 3}
   - {fileID: 2269223125256157604, guid: 55fee7180466b5e4d87b16d56d521247, type: 3}
   - {fileID: 6047119208587546001, guid: 9ccd1bf63e843f845a4171338266abb0, type: 3}
   - {fileID: 4080867063082583967, guid: 7c574bb551ae7a14aae772aa170c7ecf, type: 3}
   firstMapPiece: {fileID: 7121159612498386302, guid: 8ae961f90293e9047867eee14adde1ed, type: 3}
   spawnPoint: {fileID: 890166615}
-  fixedSpawnDistance: 7.5
+  fixedSpawnDistance: 3
+  firstPieceOffset: {x: 10, y: 0, z: 0}
+  checkBoxSize: {x: 5, y: 5, z: 5}
 --- !u!4 &936913674
 Transform:
   m_ObjectHideFlags: 0
@@ -293,7 +294,7 @@ Transform:
   m_GameObject: {fileID: 936913672}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.7412452, y: -1.6545957, z: 0.017872985}
+  m_LocalPosition: {x: 2.7, y: -1.6545957, z: 0.017872985}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -424,7 +425,7 @@ Rigidbody2D:
   m_Mass: 1
   m_LinearDrag: 0
   m_AngularDrag: 0.05
-  m_GravityScale: 4
+  m_GravityScale: 5
   m_Material: {fileID: 0}
   m_IncludeLayers:
     serializedVersion: 2
@@ -483,7 +484,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 593bcd3ad120ad6429fab74e7fd35a6b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  jumpPower: 20
+  jumpPower: 23
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
