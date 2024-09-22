@@ -18,14 +18,26 @@ public class MapMove : MonoBehaviour
         lastMapPiece = Instantiate(firstMapPiece, spawnPoint.position, Quaternion.identity);
         spawnPoint.position += new Vector3(fixedSpawnDistance, 0, 0); // 다음 플랫폼 위치로 이동
 
-        // 이후 랜덤 맵 조각들 생성 시작
+        // 두 번째 플랫폼 생성
+        SpawnSecondMapPiece();
+
+        // 이후 랜덤 맵 조각 생성 시작
         InvokeRepeating("SpawnMapPiece", 2f, 2f);
+    }
+
+    void SpawnSecondMapPiece()
+    {
+        // 두 번째 맵 조각은 무조건 mapPieces[0]으로 설정
+        GameObject secondPiece = mapPieces[0];
+        lastMapPiece = Instantiate(secondPiece, spawnPoint.position, Quaternion.identity);
+        spawnPoint.position += new Vector3(fixedSpawnDistance, 0, 0); // 다음 플랫폼 위치로 이동
     }
 
     void SpawnMapPiece()
     {
         int randomIndex;
 
+        // 이전과 같은 인덱스를 선택하지 않기 위한 로직
         do
         {
             randomIndex = Random.Range(0, mapPieces.Length);
@@ -38,6 +50,6 @@ public class MapMove : MonoBehaviour
         lastIndex = randomIndex; // 마지막 생성된 조각의 인덱스 업데이트
 
         // spawnPoint 업데이트
-        spawnPoint.position += new Vector3(fixedSpawnDistance, 0, 0);
+        spawnPoint.position += new Vector3(fixedSpawnDistance, 0, 0); // 다음 플랫폼 위치로 이동
     }
 }
