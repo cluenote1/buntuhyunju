@@ -22,8 +22,8 @@ public class WireController : MonoBehaviour
     private void Start()
     {
         // 라인 렌더러 초기 설정
-        lineRenderer.startWidth = 1f; // 시작 두께
-        lineRenderer.endWidth = 1f; // 끝 두께
+        lineRenderer.startWidth = 0.5f; // 시작 두께
+        lineRenderer.endWidth = 0.5f; // 끝 두께
         lineRenderer.startColor = Color.red; // 시작 색상
         lineRenderer.endColor = Color.red; // 끝 색상
 
