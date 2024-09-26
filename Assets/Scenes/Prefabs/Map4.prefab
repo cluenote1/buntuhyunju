@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 7572857403502510791}
   - component: {fileID: 3491012874582600295}
   - component: {fileID: 4571827040763538219}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Silver (2)
   m_TagString: Silver
   m_Icon: {fileID: 0}
@@ -170,7 +170,7 @@ GameObject:
   - component: {fileID: 5485307500812393865}
   - component: {fileID: 3478200028727713353}
   - component: {fileID: 4895137152071975340}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Silver (4)
   m_TagString: Silver
   m_Icon: {fileID: 0}
@@ -323,7 +323,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3962629332973196732}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Coin
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -375,7 +375,7 @@ GameObject:
   - component: {fileID: 8067751923199123983}
   - component: {fileID: 1558181999526389313}
   - component: {fileID: 4416448642921492312}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Tilemap
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -892,7 +892,7 @@ GameObject:
   - component: {fileID: 917904080870546737}
   - component: {fileID: 3797372511224316931}
   - component: {fileID: 2298284593520697713}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Silver (13)
   m_TagString: Silver
   m_Icon: {fileID: 0}
@@ -1049,7 +1049,7 @@ GameObject:
   - component: {fileID: 7509356627921322662}
   - component: {fileID: 3064657935231596384}
   - component: {fileID: 9197833751875114160}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Silver (14)
   m_TagString: Silver
   m_Icon: {fileID: 0}
@@ -1206,7 +1206,7 @@ GameObject:
   - component: {fileID: 3959312922861770486}
   - component: {fileID: 5998647750870348312}
   - component: {fileID: 5149130722322788514}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Silver (5)
   m_TagString: Silver
   m_Icon: {fileID: 0}
@@ -1360,7 +1360,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7066385936337673836}
   - component: {fileID: 9077583606006594855}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Grid
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1408,7 +1408,7 @@ GameObject:
   - component: {fileID: 7691738449746777170}
   - component: {fileID: 3456449061107761857}
   - component: {fileID: 4176254218978309693}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Silver (10)
   m_TagString: Silver
   m_Icon: {fileID: 0}
@@ -1565,7 +1565,7 @@ GameObject:
   - component: {fileID: 5773109164596213920}
   - component: {fileID: 426643648461133084}
   - component: {fileID: 7614961952249575457}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Silver (11)
   m_TagString: Silver
   m_Icon: {fileID: 0}
@@ -1722,7 +1722,7 @@ GameObject:
   - component: {fileID: 6162359647393986067}
   - component: {fileID: 5614649556054311201}
   - component: {fileID: 8926079548943319368}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Silver
   m_TagString: Silver
   m_Icon: {fileID: 0}
@@ -1879,7 +1879,7 @@ GameObject:
   - component: {fileID: 602046008755078495}
   - component: {fileID: 93130172987107310}
   - component: {fileID: 4750398535826642963}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Silver (8)
   m_TagString: Silver
   m_Icon: {fileID: 0}
@@ -2032,9 +2032,9 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7694945717167670499}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Map4
-  m_TagString: Ground
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2068,7 +2068,7 @@ GameObject:
   - component: {fileID: 6569449302945453856}
   - component: {fileID: 2465250082249869469}
   - component: {fileID: 7661084070629232738}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Silver (7)
   m_TagString: Silver
   m_Icon: {fileID: 0}
@@ -2225,7 +2225,7 @@ GameObject:
   - component: {fileID: 8304579728252562632}
   - component: {fileID: 8685145827150602057}
   - component: {fileID: 2643521590686549392}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Silver (9)
   m_TagString: Silver
   m_Icon: {fileID: 0}
@@ -2382,7 +2382,7 @@ GameObject:
   - component: {fileID: 5737202862197969176}
   - component: {fileID: 3883271745434057492}
   - component: {fileID: 4778492831898498666}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Silver (12)
   m_TagString: Silver
   m_Icon: {fileID: 0}
@@ -2539,7 +2539,7 @@ GameObject:
   - component: {fileID: 6011182020571742539}
   - component: {fileID: 6910302583456190779}
   - component: {fileID: 7642667600708685600}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Silver (15)
   m_TagString: Silver
   m_Icon: {fileID: 0}
@@ -2696,7 +2696,7 @@ GameObject:
   - component: {fileID: 9172760597982285896}
   - component: {fileID: 3811139073677267311}
   - component: {fileID: 756226094943116279}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Silver (3)
   m_TagString: Silver
   m_Icon: {fileID: 0}
@@ -2853,7 +2853,7 @@ GameObject:
   - component: {fileID: 878069062676560216}
   - component: {fileID: 1131469673306463945}
   - component: {fileID: 4569410751759348242}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Silver (6)
   m_TagString: Silver
   m_Icon: {fileID: 0}
@@ -3010,7 +3010,7 @@ GameObject:
   - component: {fileID: 8938601317815817182}
   - component: {fileID: 855367802419195107}
   - component: {fileID: 7045584215503130758}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Silver (1)
   m_TagString: Silver
   m_Icon: {fileID: 0}
@@ -3167,7 +3167,7 @@ GameObject:
   - component: {fileID: 2473801420331986326}
   - component: {fileID: 296994734730164700}
   - component: {fileID: 4087497808677530885}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Silver (16)
   m_TagString: Silver
   m_Icon: {fileID: 0}
