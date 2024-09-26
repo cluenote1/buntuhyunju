@@ -120,7 +120,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fe0f15c4f6791b646a18be28f22b9a7f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  clip: {fileID: 8300000, guid: cf8fb01be1f56fc4f9e768842ace3656, type: 3}
+  clip: {fileID: 8300000, guid: 166bcd3e813277a4bbd919425cc1e270, type: 3}
   coinEffect: {fileID: 2168877020062727173, guid: 99ac71b12cf9ac2419ed99bc8a5eb52b, type: 3}
 --- !u!58 &3294796905543521167
 CircleCollider2D:
@@ -309,7 +309,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fe0f15c4f6791b646a18be28f22b9a7f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  clip: {fileID: 8300000, guid: cf8fb01be1f56fc4f9e768842ace3656, type: 3}
+  clip: {fileID: 8300000, guid: 166bcd3e813277a4bbd919425cc1e270, type: 3}
   coinEffect: {fileID: 2168877020062727173, guid: 99ac71b12cf9ac2419ed99bc8a5eb52b, type: 3}
 --- !u!58 &2134930361207862913
 CircleCollider2D:
@@ -891,7 +891,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fe0f15c4f6791b646a18be28f22b9a7f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  clip: {fileID: 8300000, guid: cf8fb01be1f56fc4f9e768842ace3656, type: 3}
+  clip: {fileID: 8300000, guid: 166bcd3e813277a4bbd919425cc1e270, type: 3}
   coinEffect: {fileID: 2168877020062727173, guid: 99ac71b12cf9ac2419ed99bc8a5eb52b, type: 3}
 --- !u!58 &1487866584313145846
 CircleCollider2D:
@@ -1093,7 +1093,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fe0f15c4f6791b646a18be28f22b9a7f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  clip: {fileID: 8300000, guid: cf8fb01be1f56fc4f9e768842ace3656, type: 3}
+  clip: {fileID: 8300000, guid: 166bcd3e813277a4bbd919425cc1e270, type: 3}
   coinEffect: {fileID: 2168877020062727173, guid: 99ac71b12cf9ac2419ed99bc8a5eb52b, type: 3}
 --- !u!58 &1646166263313467931
 CircleCollider2D:
@@ -1250,7 +1250,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fe0f15c4f6791b646a18be28f22b9a7f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  clip: {fileID: 8300000, guid: cf8fb01be1f56fc4f9e768842ace3656, type: 3}
+  clip: {fileID: 8300000, guid: 166bcd3e813277a4bbd919425cc1e270, type: 3}
   coinEffect: {fileID: 2168877020062727173, guid: 99ac71b12cf9ac2419ed99bc8a5eb52b, type: 3}
 --- !u!58 &8172232853444472015
 CircleCollider2D:
@@ -1407,7 +1407,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fe0f15c4f6791b646a18be28f22b9a7f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  clip: {fileID: 8300000, guid: cf8fb01be1f56fc4f9e768842ace3656, type: 3}
+  clip: {fileID: 8300000, guid: 166bcd3e813277a4bbd919425cc1e270, type: 3}
   coinEffect: {fileID: 2168877020062727173, guid: 99ac71b12cf9ac2419ed99bc8a5eb52b, type: 3}
 --- !u!58 &323604456723204893
 CircleCollider2D:

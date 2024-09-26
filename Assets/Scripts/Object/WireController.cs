@@ -22,10 +22,10 @@ public class WireController : MonoBehaviour
     private void Start()
     {
         // 라인 렌더러 초기 설정
-        lineRenderer.startWidth = 0.5f; // 시작 두께
-        lineRenderer.endWidth = 0.5f; // 끝 두께
-        lineRenderer.startColor = Color.red; // 시작 색상
-        lineRenderer.endColor = Color.red; // 끝 색상
+        lineRenderer.startWidth = 0.2f; // 시작 두께
+        lineRenderer.endWidth = 0.2f; // 끝 두께
+        lineRenderer.startColor = Color.white; // 시작 색상
+        lineRenderer.endColor = Color.green; // 끝 색상
 
         lineRenderer.material = new Material(Shader.Find("Sprites/Default")); // 재질 설정
         transform.position = playerHand.position; // 초기 위치 설정

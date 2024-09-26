@@ -43,7 +43,7 @@ public class Player : MonoBehaviour
 
     public void Jump()
     {
-        rb.velocity = Vector2.up * jumpPower;
+        rb.velocity = new Vector2(rb.velocity.x, jumpPower); // y축으로 점프
         canJump = false; // 점프 후에는 다시 점프 불가 상태로 변경
         animator.SetBool("Jumping", true);  // 점프 애니메이션 시작
     }
