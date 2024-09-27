@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 7026298564512541214}
   - component: {fileID: 420336472477991964}
   - component: {fileID: 192255855666419327}
-  m_Layer: 7
+  m_Layer: 0
   m_Name: Tilemap
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -314,9 +314,9 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1466129464012849375}
-  m_Layer: 7
+  m_Layer: 0
   m_Name: Map2
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -347,7 +347,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7806825613152674149}
   - component: {fileID: 854615074979973189}
-  m_Layer: 7
+  m_Layer: 0
   m_Name: Grid
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -391,7 +391,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5436139288773229113}
-  m_Layer: 7
+  m_Layer: 0
   m_Name: Coin
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -428,7 +428,7 @@ GameObject:
   - component: {fileID: 3288567573910844634}
   - component: {fileID: 8595378942257686270}
   - component: {fileID: 2595893372875649850}
-  m_Layer: 7
+  m_Layer: 0
   m_Name: Gold
   m_TagString: Gold
   m_Icon: {fileID: 0}
@@ -585,7 +585,7 @@ GameObject:
   - component: {fileID: 1410768873365296356}
   - component: {fileID: 1774363465474072404}
   - component: {fileID: 959870121505155952}
-  m_Layer: 7
+  m_Layer: 0
   m_Name: Gold
   m_TagString: Gold
   m_Icon: {fileID: 0}

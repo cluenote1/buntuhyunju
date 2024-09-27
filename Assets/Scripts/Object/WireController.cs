@@ -136,11 +136,32 @@ public class WireController : MonoBehaviour
         transform.parent = hit.transform; // 목표에 와이어 고정
         Debug.Log("와이어가 " + hit.collider.name + "에 고정되었습니다!");
     }
+    private IEnumerator AdjustWireLength(float initialDistance)
+    {
+        while (isWire)
+        {
+            // 현재 와이어 길이와 플레이어 손과의 거리 업데이트
+            float currentDistance = Vector3.Distance(playerHand.position, transform.position);
+            if (currentDistance > initialDistance)
+            {
+                // 와이어를 늘립니다.
+                transform.position = Vector3.MoveTowards(transform.position, playerHand.position, Time.deltaTime * shotSpeed);
+                UpdateLineRenderer(); // 라인 렌더러 업데이트
+            }
+
+            yield return null;
+        }
+    }
 
     private void UpdateLineRenderer()
     {
         // 라인 렌더러의 시작과 끝 위치 설정
         lineRenderer.SetPosition(0, playerHand.position); // 시작점은 플레이어 손
         lineRenderer.SetPosition(1, transform.position);  // 끝점은 와이어의 현재 위치
+    }
+
+    public bool IsWireActive()
+    {
+        return isWire; // 와이어 상태를 반환하는 메소드
     }
 }

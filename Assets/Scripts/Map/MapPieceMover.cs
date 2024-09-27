@@ -9,6 +9,9 @@ public class MapPieceMover : MonoBehaviour
 
     void Update()
     {
+        // 점수에 따라 이동 속도 조절
+        moveSpeed = GetScoreBasedSpeed();
+
         // 왼쪽으로 이동
         transform.Translate(Vector3.left * moveSpeed * Time.deltaTime);
 
@@ -17,5 +20,12 @@ public class MapPieceMover : MonoBehaviour
         {
             Destroy(gameObject);
         }
+    }
+
+    float GetScoreBasedSpeed()
+    {
+        // 예시: 1000점마다 속도 증가
+        int score = DataManager.Instance.GetScore(); // 현재 점수를 가져오는 함수
+        return 5f + (score / 200) * 2f; // 기본 속도 + 점수에 따라 증가
     }
 }

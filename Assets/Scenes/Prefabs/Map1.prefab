@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 2131206870613963701}
   - component: {fileID: 2781045537381237924}
   - component: {fileID: 3294796905543521167}
-  m_Layer: 7
+  m_Layer: 0
   m_Name: Silver (1)
   m_TagString: Silver
   m_Icon: {fileID: 0}
@@ -166,9 +166,9 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1176551640526184703}
-  m_Layer: 7
+  m_Layer: 0
   m_Name: Map1
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -202,7 +202,7 @@ GameObject:
   - component: {fileID: 7098626643555153656}
   - component: {fileID: 272071266838040605}
   - component: {fileID: 2134930361207862913}
-  m_Layer: 7
+  m_Layer: 0
   m_Name: Gold
   m_TagString: Gold
   m_Icon: {fileID: 0}
@@ -359,7 +359,7 @@ GameObject:
   - component: {fileID: 399637290372486933}
   - component: {fileID: 8061654331157172487}
   - component: {fileID: 978174028616322240}
-  m_Layer: 7
+  m_Layer: 0
   m_Name: Tilemap
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -784,7 +784,7 @@ GameObject:
   - component: {fileID: 2238935285267910228}
   - component: {fileID: 8846384782831758874}
   - component: {fileID: 1487866584313145846}
-  m_Layer: 7
+  m_Layer: 0
   m_Name: Gold (2)
   m_TagString: Gold
   m_Icon: {fileID: 0}
@@ -938,7 +938,7 @@ GameObject:
   m_Component:
   - component: {fileID: 924654491718902177}
   - component: {fileID: 995565357987903140}
-  m_Layer: 7
+  m_Layer: 0
   m_Name: Grid
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -986,7 +986,7 @@ GameObject:
   - component: {fileID: 6927782072129289094}
   - component: {fileID: 3769344495154007540}
   - component: {fileID: 1646166263313467931}
-  m_Layer: 7
+  m_Layer: 0
   m_Name: Gold
   m_TagString: Gold
   m_Icon: {fileID: 0}
@@ -1143,7 +1143,7 @@ GameObject:
   - component: {fileID: 7737153520915630621}
   - component: {fileID: 422179931742064221}
   - component: {fileID: 8172232853444472015}
-  m_Layer: 7
+  m_Layer: 0
   m_Name: Silver
   m_TagString: Silver
   m_Icon: {fileID: 0}
@@ -1300,7 +1300,7 @@ GameObject:
   - component: {fileID: 2923965691091132043}
   - component: {fileID: 3599696979995632624}
   - component: {fileID: 323604456723204893}
-  m_Layer: 7
+  m_Layer: 0
   m_Name: Gold (1)
   m_TagString: Gold
   m_Icon: {fileID: 0}
@@ -1453,7 +1453,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2541353095014695613}
-  m_Layer: 7
+  m_Layer: 0
   m_Name: Coin
   m_TagString: Untagged
   m_Icon: {fileID: 0}

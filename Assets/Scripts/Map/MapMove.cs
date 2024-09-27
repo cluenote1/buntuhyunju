@@ -6,7 +6,7 @@ public class MapMove : MonoBehaviour
 {
     public GameObject[] mapPieces;       // 랜덤으로 생성될 맵 조각 배열
     public GameObject firstMapPiece;     // 첫 번째로 생성할 맵 조각
-    public Transform spawnPoint;         // 맵 조각이 생성될 위치
+    public Transform spawnPoint;          // 맵 조각이 생성될 위치
     public float fixedSpawnDistance = 10f; // 플랫폼 사이의 고정된 간격
 
     private GameObject lastMapPiece;     // 마지막으로 생성된 맵 조각을 저장할 변수
