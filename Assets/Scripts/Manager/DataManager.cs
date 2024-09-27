@@ -1,7 +1,6 @@
 using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.SocialPlatforms.Impl;
+using UnityEngine.SceneManagement;
 
 public class DataManager : MonoBehaviour
 {
@@ -14,6 +13,10 @@ public class DataManager : MonoBehaviour
             return instance;
         }
     }
+
+    public int score = 0;      // 현재 점수
+    public static int bestScore = 0;  // 최고 점수
+    public int Stage = 0;
     private void Awake()
     {
         if (instance == null)
@@ -27,28 +30,40 @@ public class DataManager : MonoBehaviour
         }
     }
 
-    public int Score = 0;
-    public int Stage = 0;
-    public bool isDead = false;
-    public bool isEnd = false;
-
-    [RuntimeInitializeOnLoadMethod(RuntimeInitializeLoadType.BeforeSceneLoad)]
-    static void FirstLoad()
+    public void UpdateScore(int points)
     {
-        Application.targetFrameRate = 70;
-        QualitySettings.vSyncCount = 0;
+        score += points;  // 점수 추가
+        if (score > bestScore) // 현재 점수가 최고 점수보다 클 경우
+        {
+            bestScore = score; // 최고 점수 업데이트
+        }
+    }
 
-        if (!PlayerPrefs.HasKey("BestScore"))
+    public void ResetScore()
+
+    {
+        score = 0;  // 점수 초기화
+    }
+
+    public int GetScore()
+    {
+        return score;
+    }
+
+    // 게임 재시작 시 호출
+    public void RestartGame()
+    {
+        ResetScore();  // 점수를 0으로 초기화
+        SceneManager.LoadScene("GameScene");  // 게임 씬 다시 로드
+    }
+
+    public void CheckAndUpdateBestScore()
+    {
+        if (score > bestScore)
         {
-            PlayerPrefs.SetInt("BestScore", 0);
-        }
-        if (!PlayerPrefs.HasKey("BGMScale"))
-        {
-            PlayerPrefs.SetFloat("BGMScale", 1f);
-        }
-        if (!PlayerPrefs.HasKey("SFXScale"))
-        {
-            PlayerPrefs.SetFloat("SFXScale", 1f);
+            bestScore = score; // 베스트 스코어 업데이트
+            PlayerPrefs.SetInt("BestScore", bestScore); // PlayerPrefs에 저장
+            PlayerPrefs.Save(); // 저장
         }
     }
 }

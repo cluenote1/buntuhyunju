@@ -33,11 +33,11 @@ public class Coin : MonoBehaviour
             // 점수 증가
             if (CompareTag("Silver"))
             {
-                DataManager.Instance.Score += 5;
+                DataManager.Instance.UpdateScore(5);
             }
             else if (CompareTag("Gold"))
             {
-                DataManager.Instance.Score += 50 - (5 * DataManager.Instance.Stage);
+                DataManager.Instance.UpdateScore(50 - (5 * DataManager.Instance.Stage));
             }
 
             // 소리 재생 및 효과 생성
