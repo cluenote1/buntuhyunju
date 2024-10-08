@@ -1,12 +1,12 @@
-using System.Collections;
+ï»¿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
 public class UIManager : MonoBehaviour
 {
-    public Text scoreText;        // ÇöÀç Á¡¼ö¸¦ Ç¥½ÃÇÒ UI Text
-    public Text bestScoreText;    // ÃÖ°í Á¡¼ö¸¦ Ç¥½ÃÇÒ UI Text
+    public Text scoreText;        // í˜„ì¬ ì ìˆ˜ë¥¼ í‘œì‹œí•  UI Text
+    public Text bestScoreText;    // ìµœê³  ì ìˆ˜ë¥¼ í‘œì‹œí•  UI Text
 
     void Start()
     {
@@ -20,15 +20,15 @@ public class UIManager : MonoBehaviour
             Debug.LogError("Best Score Text is not assigned!");
         }
 
-        DataManager.Instance.ResetScore();  // ÃÊ±âÈ­
+        DataManager.Instance.ResetScore();  // ì´ˆê¸°í™”
     }
 
     void Update()
     {
-        if (DataManager.Instance != null) // DataManager.Instance°¡ nullÀÎÁö È®ÀÎ
+        if (DataManager.Instance != null) // DataManager.Instanceê°€ nullì¸ì§€ í™•ì¸
         {
-            scoreText.text = "Score: " + DataManager.Instance.GetScore().ToString();
-            bestScoreText.text = "Best Score: " + DataManager.bestScore.ToString();
+            scoreText.text = "åˆ†æ•°: " + DataManager.Instance.GetScore().ToString();
+            bestScoreText.text = "æœ€ä½³æˆç»©: " + DataManager.bestScore.ToString();
         }
         
     }

@@ -1,4 +1,4 @@
-using System.Collections;
+﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
@@ -21,7 +21,7 @@ public class GameOverScore : MonoBehaviour
         }
 
         int currentScore = DataManager.Instance.GetScore();
-        scoreText.text = "Score: " + currentScore.ToString();
-        bestScoreText.text = "Best Score: " + DataManager.bestScore.ToString();
+        scoreText.text = "分数: " + currentScore.ToString();
+        bestScoreText.text = "最佳成绩: " + DataManager.bestScore.ToString();
     }
 }
